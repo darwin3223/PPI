@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<link rel="Stylesheet" href="estilos_Login_Registro.css" />
+	<title>Inicio de sesion</title>
+</h:head>
+<h:body>
+	<div class="main">
+		<div class="contenedor__todo">
+
+
+			<div class="caja__trasera">
+				<div class="caja__trasera-login">
+					<h3>¿Ya tenes una cuenta?</h3>
+					<p>Inicia sesión para entrar</p>
+					<h:commandButton id="btn__iniciar-sesion" class="button" value="Iniciar Sesión"></h:commandButton>
+				</div>
+				<div class="caja__trasera-register">
+					<h3>¿No tenes una cuenta?</h3>
+					<p>Regístrate para iniciar sesión</p>
+					<h:commandButton id="btn__registrarse" class="button" value="Regístrarse"></h:commandButton>
+				</div>
+			</div>
+
+			<div class="contenedor__login-register">
+				<!--Login-->
+				<form action="" class="formulario__login">
+					<h2>Iniciar Sesión</h2>
+
+					<p:inputText class="campo" id="nombreUsuario"
+						placeholder="Correo Electronico"
+						></p:inputText>
+					<p:inputText type="password" class="campo" id="contrasenia"
+						placeholder="Contraseña"
+						></p:inputText>
+
+					<p:commandButton class="button" value="Entrar"
+						></p:commandButton>
+
+				</form>
+
+				<!--Register-->
+				<form action="" class="formulario__register" >
+					<h2>Regístrarse</h2>
+					<p:inputText class="campo" id="nombreUsuario" placeholder="Nombre"
+						></p:inputText>
+					<p:inputText class="campo" id="apellidoUsuario"
+						placeholder="Apellido" ></p:inputText>
+					<p:inputText class="campo" id="ci"
+						placeholder="Documento de identidad" ></p:inputText>
+					<p:datePicker class="calendar" id="fechaNac"
+						placeholder="Fecha de nacimiento" monthNavigator="true"
+						yearNavigator="true" ></p:datePicker>
+					<p:inputText class="campo" id="email" placeholder="Email personal"
+						></p:inputText>
+					<p:inputText class="campo" id="telefono" placeholder="Teléfono"
+						></p:inputText>
+					<p:selectOneMenu id="departamento" placeholder="Departamento"
+						
+						styleClass="anchoComboBox">
+						<f:selectItem itemValue="" itemLabel="" />
+						<f:selectItem itemValue="Artigas" itemLabel="Artigas" />
+						<f:selectItem itemValue="Canelones" itemLabel="Canelones" />
+						<f:selectItem itemValue="Cerro Largo" itemLabel="Cerro Largo" />
+						<f:selectItem itemValue="Colonia" itemLabel="Colonia" />
+						<f:selectItem itemValue="Durazno" itemLabel="Durazno" />
+						<f:selectItem itemValue="Flores" itemLabel="Flores" />
+						<f:selectItem itemValue="Florida" itemLabel="Florida" />
+						<f:selectItem itemValue="Lavalleja" itemLabel="Lavalleja" />
+						<f:selectItem itemValue="Maldonado" itemLabel="Maldonado" />
+						<f:selectItem itemValue="Montevideo" itemLabel="Montevideo" />
+						<f:selectItem itemValue="Paysandú" itemLabel="Paysandú" />
+						<f:selectItem itemValue="Río Negro" itemLabel="Río Negro" />
+						<f:selectItem itemValue="Rivera" itemLabel="Rivera" />
+						<f:selectItem itemValue="Rocha" itemLabel="Rocha" />
+						<f:selectItem itemValue="Salto" itemLabel="Salto" />
+						<f:selectItem itemValue="San José" itemLabel="San José" />
+						<f:selectItem itemValue="Soriano" itemLabel="Soriano" />
+						<f:selectItem itemValue="Tacuarembó" itemLabel="Tacuarembó" />
+						<f:selectItem itemValue="Treinta y tres"
+							itemLabel="Treinta y tres" />
+					</p:selectOneMenu>
+					<p:inputText class="campo" id="localidad" placeholder="Localidad"
+						></p:inputText>
+
+					<p:commandButton class="button" value="Regístrarse" ></p:commandButton>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</h:body>
+</html>

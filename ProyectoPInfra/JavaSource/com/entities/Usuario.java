@@ -2,9 +2,17 @@ package com.entities;
 
 import java.util.Date;
 
+import com.enums.EstadoItr;
 import com.enums.TipoUsuario;
 import com.enums.Verificacion;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Usuario {
 	private long idUsuario;
 	
@@ -30,5 +38,5 @@ public class Usuario {
 	
 	private String telefono;
 	
-	private 
+	private Itr itr;
 }

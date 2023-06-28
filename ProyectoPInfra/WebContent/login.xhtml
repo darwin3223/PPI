@@ -15,15 +15,17 @@
 
 
 			<div class="caja__trasera">
-				<div class="caja__trasera-login">
-					<h3>¿Ya tenes una cuenta?</h3>
-					<p>Inicia sesión para entrar</p>
-					<h:commandButton id="btn__iniciar-sesion" class="button" value="Iniciar Sesión"></h:commandButton>
-				</div>
 				<div class="caja__trasera-register">
 					<h3>¿No tenes una cuenta?</h3>
 					<p>Regístrate para iniciar sesión</p>
-					<h:commandButton id="btn__registrarse" class="button" value="Regístrarse"></h:commandButton>
+					<h:commandButton id="btn__registrarse" class="button"
+						value="Regístrarse" action="#{claseDePrueba.funcion_Registrarse}"></h:commandButton>
+				</div>
+				<div class="caja__trasera-login">
+					<h3>¿Ya tenes una cuenta?</h3>
+					<p>Inicia sesión para entrar</p>
+					<h:commandButton id="btn__iniciar-sesion" class="button"
+						value="Iniciar Sesión" action="#{}"></h:commandButton>
 				</div>
 			</div>
 
@@ -33,35 +35,28 @@
 					<h2>Iniciar Sesión</h2>
 
 					<p:inputText class="campo" id="nombreUsuario"
-						placeholder="Correo Electronico"
-						></p:inputText>
+						placeholder="Correo Electronico"></p:inputText>
 					<p:inputText type="password" class="campo" id="contrasenia"
-						placeholder="Contraseña"
-						></p:inputText>
+						placeholder="Contraseña"></p:inputText>
 
-					<p:commandButton class="button" value="Entrar"
-						></p:commandButton>
+					<p:commandButton class="button" value="Entrar"></p:commandButton>
 
 				</form>
 
 				<!--Register-->
-				<form action="" class="formulario__register" >
+				<form action="" class="formulario__register">
 					<h2>Regístrarse</h2>
-					<p:inputText class="campo" id="nombreUsuario" placeholder="Nombre"
-						></p:inputText>
+					<p:inputText class="campo" id="nombreUsuario" placeholder="Nombre"></p:inputText>
 					<p:inputText class="campo" id="apellidoUsuario"
-						placeholder="Apellido" ></p:inputText>
+						placeholder="Apellido"></p:inputText>
 					<p:inputText class="campo" id="ci"
-						placeholder="Documento de identidad" ></p:inputText>
+						placeholder="Documento de identidad"></p:inputText>
 					<p:datePicker class="calendar" id="fechaNac"
 						placeholder="Fecha de nacimiento" monthNavigator="true"
-						yearNavigator="true" ></p:datePicker>
-					<p:inputText class="campo" id="email" placeholder="Email personal"
-						></p:inputText>
-					<p:inputText class="campo" id="telefono" placeholder="Teléfono"
-						></p:inputText>
+						yearNavigator="true"></p:datePicker>
+					<p:inputText class="campo" id="email" placeholder="Email personal"></p:inputText>
+					<p:inputText class="campo" id="telefono" placeholder="Teléfono"></p:inputText>
 					<p:selectOneMenu id="departamento" placeholder="Departamento"
-						
 						styleClass="anchoComboBox">
 						<f:selectItem itemValue="" itemLabel="" />
 						<f:selectItem itemValue="Artigas" itemLabel="Artigas" />
@@ -85,10 +80,9 @@
 						<f:selectItem itemValue="Treinta y tres"
 							itemLabel="Treinta y tres" />
 					</p:selectOneMenu>
-					<p:inputText class="campo" id="localidad" placeholder="Localidad"
-						></p:inputText>
+					<p:inputText class="campo" id="localidad" placeholder="Localidad"></p:inputText>
 
-					<p:commandButton class="button" value="Regístrarse" ></p:commandButton>
+					<p:commandButton class="button" value="Regístrarse"></p:commandButton>
 
 				</form>
 			</div>

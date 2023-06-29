@@ -74,17 +74,25 @@ body {
 }
 
 /*Formularios*/
-.contenedor__login-register {
+.contenedor__login-register{
 	display: flex;
 	align-items: center;
 	width: 100%;
 	max-width: 400px;
 	position: relative;
 	top: -185px;
-	left: 10px;
+	/* left: 10px; */
 
 	/* La transicion va despues del codigo JS */
    /*  transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); */
+}
+
+.contenedor__login {
+	left: 390px;
+}
+
+.contenedor__register {
+	left: 10px;
 }
 
 .contenedor__login-register form {
@@ -124,27 +132,20 @@ body {
 	outline: none;
 }
 
+
 .formulario__login {
 	opacity: 1;
 	display: block;
 }
 
 .formulario__register {
-	display: none;
+	display: block;
 	
 	/*Barra de scroll*/
 	height: 432px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-
-
-/* .caja__trasera-login{
-	
-}
-.caja__trasera-register{
-	
-} */
 
 
 /*Disenio Responsive*/

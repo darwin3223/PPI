@@ -19,5 +19,7 @@
 	<classpathentry kind="lib" path="C:/wildfly-26.1.0.Final/modules/system/layers/base/javax/annotation/api/main/jboss-annotations-api_1.3_spec-2.0.1.Final.jar"/>
 	<classpathentry kind="lib" path="/AppWebSemana4/lib/jakarta.inject-api-1.0.5.jar"/>
 	<classpathentry kind="lib" path="/AppWebSemana4/lib/jakarta.enterprise.cdi-api-2.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/wildfly-26.1.0.Final/modules/system/layers/base/javax/enterprise/api/main/jakarta.enterprise.cdi-api-2.0.2.jar"/>
+	<classpathentry kind="lib" path="/PDT-EJB-GITHUB/lib/hibernate-core-5.3.24.Final.jar"/>
 	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
 </classpath>

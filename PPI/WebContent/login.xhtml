@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<link rel="Stylesheet" href="hojaEstilos_Login_Registro.css" />
+	<title>Inicio de sesion</title>
+</h:head>
+<h:body>
+	<div class="main">
+		<div class="contenedor__todo">
+
+
+			<div class="caja__trasera">
+				<div class="caja__trasera-register">
+					<h3>¿No tenes una cuenta?</h3>
+					<p>Regístrate para iniciar sesión</p>
+					<h:commandButton id="btn__registrarse" class="button"
+						value="Regístrarse"></h:commandButton>
+				</div>
+				<div class="caja__trasera-login">
+					<h3>¿Ya tenes una cuenta?</h3>
+					<p>Inicia sesión para entrar</p>
+					<h:commandButton id="btn__iniciar-sesion" class="button"
+						value="Iniciar Sesión"></h:commandButton>
+				</div>
+			</div>
+
+			<div class="contenedor__login-register contenedor__login">
+				<img src="img/Simbologo_Utec_con_letras_en_blanco.png" alt="logoUTEC" />
+				<!--Login-->
+				<form action="" class="formulario__login">
+					<h2>Iniciar Sesión</h2>
+
+					<p:inputText class="campo" id="nombreUsuario"
+						placeholder="Correo Electronico"></p:inputText>
+					<p:inputText type="password" class="campo" id="contrasenia"
+						placeholder="Contraseña"></p:inputText>
+
+					<p:commandButton class="button" value="Entrar"></p:commandButton>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</h:body>
+</html>
